@@ -587,4 +587,9 @@ select.form-control[multiple] {
 
 .custom-badges-size {
     font-size: 125%;
+    cursor: pointer;
+}
+.choose-elements {
+    font-size: medium;
+    font-weight: 300 !important;
 }
