@@ -584,3 +584,7 @@ select.form-control[multiple] {
 #contactForm .btn {
     background-color: #fff;
 }
+
+.custom-badges-size {
+    font-size: 125%;
+}
