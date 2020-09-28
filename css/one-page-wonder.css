@@ -174,3 +174,11 @@ background: #f84e77;
   color: #fff;
   font-weight: 900;
 }
+
+.how-section {
+  text-align: left;
+  background-color: #e8f1f7;
+  min-height: 50vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

@@ -1,0 +1,30 @@
+Change “Have a Coupon?” Message @ WooCommerce Checkout
+https://www.businessbloomer.com/woocommerce-change-coupon-code-message-cart-checkout/
+
+/**
+ * @snippet       Edit "Have a Coupon" message @ WooCommerce Checkout
+ * @how-to        Get CustomizeWoo.com FREE
+ * @sourcecode    https://businessbloomer.com/?p=21348
+ * @author        Rodolfo Melogli
+ * @testedwith    WooCommerce 2.6.8, WordPress 4.7
+ */
+ 
+add_filter( 'woocommerce_checkout_coupon_message', 'bbloomer_have_coupon_message');
+ 
+function bbloomer_have_coupon_message() {
+    return '<i class="fa fa-ticket" aria-hidden="true"></i> Use this coupon: CART10 and get 10% off discount <a href="#" class="showcoupon">Click here to enter your discount code now</a>';
+}
+
+function custom_woocommerce_review_order_before_payment() {
+    echo "<img src='https://estrellaintima.com/wp-content/uploads/2020/09/CreditCardIcons.png'>";
+}
+add_action('woocommerce_review_order_before_payment','custom_woocommerce_review_order_before_payment');
+
+
+function custom_woocommerce_review_order_after_payment() {
+    echo "<div style='text-align:center;max-width: 75%;'><img src='https://estrellaintima.com/wp-content/uploads/2020/09/jc-mcafee-comodo-v2.jpg'></div>";
+}
+add_action('woocommerce_review_order_after_payment','custom_woocommerce_review_order_after_payment');
+
+
+// move to cart after "add"

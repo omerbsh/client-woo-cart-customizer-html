@@ -588,8 +588,169 @@ select.form-control[multiple] {
 .custom-badges-size {
     font-size: 125%;
     cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
 }
 .choose-elements {
     font-size: medium;
     font-weight: 300 !important;
+}
+/* cart illustration */
+table.cart th, table.cart td {
+    padding: 1.618em;
+}
+.wc-proceed-to-checkout {
+    margin-bottom: 1.618em;
+}
+body, button, input, textarea {
+    color: #43454b;
+    font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.618;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .added_to_cart {
+    border: 0;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    border-radius: 0;
+    background: none;
+        background-color: rgba(0, 0, 0, 0);
+    background-color: #43454b;
+    border-color: #43454b;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.6180469716em 1.41575em;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-appearance: none;
+}
+.cart-collaterals .cart_totals, .cart-collaterals .shipping_calculator {
+    width: 52.9411764706%;
+    float: right;
+    margin-right: 0;
+    margin: 0;
+    clear: right;
+  }
+  
+  table.cart td.actions .coupon {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+    display: inline-block;
+    float: left;
+  }
+  
+  table.cart td.actions input {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+  }
+  input[type="text"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], input[type="search"], textarea, .input-text {
+    padding: 0.6180469716em;
+    background-color: #f2f2f2;
+    color: #43454b;
+    border: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: normal;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+  }
+  table.cart td.actions {
+    text-align: right;
+  }
+/* end woocommerce cart style */
+
+.badge-hook-position {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.woocommerce-cart .hentry, .woocommerce-checkout .hentry {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.hentry.type-page .entry-header {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+table.cart {
+    margin-bottom: 0;
+}
+table:not(.has-background) th {
+    background-color: #f8f8f8;
+}
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+.wc-proceed-to-checkout .button.checkout-button {
+    font-size: 1.41575em;
+}
+.wc-proceed-to-checkout .button {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+.wc-proceed-to-checkout {
+    margin-bottom: 1.618em;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 200;
+}
+
+.notice {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.notice-sm {
+    padding: 10px;
+    font-size: 80%;
+}
+.notice-lg {
+    padding: 35px;
+    font-size: large;
+}
+.notice-success {
+    border-color: #80D651;
+}
+.notice-success>strong {
+    color: #80D651;
+}
+.notice-info {
+    border-color: #45ABCD;
+}
+.notice-info>strong {
+    color: #45ABCD;
+}
+.notice-warning {
+    border-color: #FEAF20;
+}
+.notice-warning>strong {
+    color: #FEAF20;
+}
+.notice-danger {
+    border-color: #d73814;
+}
+.notice-danger>strong {
+    color: #d73814;
 }
